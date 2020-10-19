@@ -1,0 +1,24 @@
+/* #region  Fonts */
+
+@font-face {
+    font-family: "Chewy";
+    src: url("../fonts/chewy.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Corbel";
+    src: url("../fonts/Corbel.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* #endregion */
+
+$main-font-family: "corbel", "Gill Sans", "Gill Sans MT", "Calibri",
+    "Trebuchet MS", sans-serif;
+$logo-font-family: "Chewy", sans-serif;
+$main-font-size: 20px;

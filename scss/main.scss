@@ -1,4 +1,11 @@
-@import "modules/_colors.scss";
-@import "modules/_fonts.scss";
-@import "modules/_base.scss";
-@import "modules/_form.scss";
+@import "base/_colors";
+@import "base/_fonts";
+@import "base/_general";
+@import "base/_media";
+
+@import "modules/board-member";
+@import "modules/page-section";
+@import "modules/primary-nav";
+@import "modules/section-title";
+@import "modules/site-header";
+@import "modules/wrapper";

@@ -7,14 +7,14 @@
     <title>Smedjebacken Makerspace</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="./assets/styles/main.css">
 
 </head>
 
 <body>
-    <header class="top--large">
-        <h1><a href="#start">Smedjebacken Makerspace</a></h1>
-        <nav>
+    <header class="site-header">
+        <h1><a href="#start" class="logo">Smedjebacken Makerspace</a></h1>
+        <nav class="primary-nav">
             <ul>
                 <li><a href="#sponsors">Våra sponsorer</a></li>
                 <li><a href="#about">Om oss</a></li>
@@ -23,9 +23,9 @@
         </nav>
     </header>
 
-    <div class="container">
-        <div id="start" class="page-section page-section__start">
-            <h2>Välkommen till Smedjebacken Makerspace!</h2>
+    <div class="wrapper--site">
+        <div id="start" class="page-section">
+            <h2 class="section-title">Välkommen till Smedjebacken Makerspace!</h2>
             <p>
                 Vi är en förening som vill främja teknikkunskap och kreativitet i Smedjebacken med omnejd.
                 Vår ambition är att skapa en plats där alla kan komma och experimentera och skapa.
@@ -35,58 +35,82 @@
                 ska kunna ha så roligt som
                 möjligt tillsammans med våra medlemmar. <a href="#register">Så varför inte bli medlem redan nu</a>?
             </p>
-            <p>På sociala medier publicerar vi mer info om aktiviteter, experiment och projekt.
+            <p">På sociala medier publicerar vi mer info om aktiviteter, experiment och
+                projekt.
                 Kolla gärna in Facebook eller Instagram</p>
-            <ul>
-                <li>Facebook</li>
-                <li>Instagram</li>
-            </ul>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                </ul>
         </div>
-        <div id="sponsors" class="page-section page-section__sponsors">
-            <h2>Våra fantastiska sponsorer</h2>
+        <div id="sponsors" class="page-section">
+            <h2 class="section-title">Våra fantastiska sponsorer</h2>
+            <div class="wrapper--sponsors">
+                <div class="sponsor">
+                    <h2 class="sponsor__title"></h2>
+                    <img src="" alt="" class="sponsor__logo">
+                </div>
+                <div class="sponsor">
+                    <h2 class="sponsor__title"></h2>
+                    <img src="" alt="" class="sponsor__logo">
+                </div>
+                <div class="sponsor">
+                    <h2 class="sponsor__title"></h2>
+                    <img src="" alt="" class="sponsor__logo">
+                </div>
+                <div class="sponsor">
+                    <h2 class="sponsor__title"></h2>
+                    <img src="" alt="" class="sponsor__logo">
+                </div>
+            </div>
+            <div class="sponsors__details sponsors__details--hidden">
+            </div>
         </div>
-        <div id="about" class="page-section page-section__about">
-            <h2>Om oss</h2>
-            <h3>Föreningen</h3>
+        <div id="about" class="page-section">
+            <h2 class="section-title">Om oss</h2>
+            <h3 class="section-title section-title--sub">Föreningen</h3>
             <p>Smedjebacken Makerspace grundades i början av 2018 och har sedan dess haft ett antal aktiviteter för
                 skolungdomar i Västerbergslagen</p>
             <p>Sedan starten har vi jobbat med att etablera föreningen, fixa sponsorer och lokaler, samt att skaffa
                 rolig utrustning.</p>
-            <h3>Sittande styrelse</h3>
+            <h3 class="section-title">Sittande styrelse</h3>
             <p>Vi väljer vår styrelse årsvis. För närvarande består den av dessa glada Makerspacare:</p>
-            <div class="page-section__about__board">
-                <img src="" alt="Ordförande: Anders Berggren">
-                <span class="page-section__about__board__caption">Ordförande: Anders Berggren</span>
-            </div>
-            <div class="page-section__about__board">
-                <img src="" alt="Kassör: Dan Peterson">
-                <span class="page-section__about__board__caption">Kassör: Dan Peterson</span>
-            </div>
-            <div class="page-section__about__board">
-                <img src="" alt="Sekreterare: Mikaela Hedberg">
-                <span class="page-section__about__board__caption">Sekreterare: Mikaela Hedberg</span>
-            </div>
-            <div class="page-section__about__board">
-                <img src="" alt="Styrelsemedlem: Tobias Wetterskog">
-                <span class="page-section__about__board__caption">Styrelsemedlem: Tobias Wetterskog</span>
-            </div>
-            <div class="page-section__about__board">
-                <img src="" alt="Styrelsemedlem: Janna Johansson">
-                <span class="page-section__about__board__caption">Styrelsemedlem: Janna Johansson</span>
-            </div>
-            <div class="page-section__about__board">
-                <img src="" alt="Styrelsemedlem: Micaela Nyström">
-                <span class="page-section__about__board__caption">Styrelsemedlem: Micaela Nyström</span>
+            <div class="wrapper--board-member">
+                <div class="board-member">
+                    <img class="board-member__image" src="" alt="Ordförande: Anders Berggren">
+                    <span class="board-member__caption">Ordförande: Anders Berggren</span>
+                </div>
+                <div class="board-member">
+                    <img class="board-member__image" src="" alt="Kassör: Dan Peterson">
+                    <span class="board-member__caption">Kassör: Dan Peterson</span>
+                </div>
+                <div class="board-member">
+                    <img class="board-member__image" src="" alt="Sekreterare: Mikaela Hedberg">
+                    <span class="board-member__caption">Sekreterare: Mikaela Hedberg</span>
+                </div>
+                <div class="board-member">
+                    <img class="board-member__image" src="" alt="Styrelsemedlem: Tobias Wetterskog">
+                    <span class="board-member__caption">Styrelsemedlem: Tobias Wetterskog</span>
+                </div>
+                <div class="board-member">
+                    <img class="board-member__image" src="" alt="Styrelsemedlem: Janna Johansson">
+                    <span class="board-member__caption">Styrelsemedlem: Janna Johansson</span>
+                </div>
+                <div class="board-member">
+                    <img class="board-member__image" src="" alt="Styrelsemedlem: Micaela Nyström">
+                    <span class="board-member__caption">Styrelsemedlem: Micaela Nyström</span>
+                </div>
             </div>
 
         </div>
-        <div id="register" class="page-section page-section__register">
-            <h2>Bli medlem</h2>
+        <div id="register" class="page-section">
+            <h2 class="section-title">Bli medlem</h2>
             Medlemsvillkor
+            <div class="page-section__form"></div>
 
         </div>
     </div>
-    <div class="footer"></div>
+    <div class="site-footer"></div>
     <script src="bundled.js"></script>
 </body>
 
