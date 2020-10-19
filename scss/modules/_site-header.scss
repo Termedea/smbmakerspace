@@ -1,0 +1,37 @@
+.site-header {
+    background-color: $secondary-pale;
+    padding: 0;
+
+    &__logo {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5em;
+        @include atSmall {
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        @include atLarge {
+            justify-content: flex-start;
+        }
+        &__image {
+            max-height: 7rem;
+            display: block;
+            @include atSmall {
+                display: inline;
+            }
+        }
+        &__text {
+            font-family: $logo-font-family;
+            color: $primary-text;
+            font-size: 2rem;
+            text-align: center;
+            @include atSmall {
+                text-align: left;
+                font-size: 3rem;
+            }
+        }
+    }
+}
