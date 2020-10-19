@@ -1,0 +1,17 @@
+{
+  "name": "smbmakerspace2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "compile-sass": "^1.1.1",
+    "node-sass": "^4.14.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass.watch": "node-sass --watch ./scss/ --output-style compressed -o ./app/assets/styles/"
+  },
+  "author": "",
+  "license": "ISC"
+}

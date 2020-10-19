@@ -1,0 +1,38 @@
+$main-color: rgb(240, 228, 245);
+$sec-color: rgb(41, 6, 41);
+$red: rgb(134, 33, 33);
+$green: rgb(38, 124, 35);
+$black: rgb(29, 27, 36);
+$yellow: rgb(190, 167, 33);
+$purple: rgb(107, 24, 107);
+$brown: rgb(95, 57, 26);
+
+.color-red {
+    background-color: $red;
+    color: $main-color;
+}
+
+.color-green {
+    background-color: $green;
+    color: $main-color;
+}
+
+.color-black {
+    background-color: $black;
+    color: $main-color;
+}
+
+.color-yellow {
+    background-color: $yellow;
+    color: $sec-color;
+}
+
+.color-purple {
+    background-color: $purple;
+    color: $main-color;
+}
+
+.color-brown {
+    background: $brown;
+    color: $main-color;
+}
