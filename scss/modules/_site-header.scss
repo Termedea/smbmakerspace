@@ -1,7 +1,16 @@
 .site-header {
-    background-color: $secondary-pale;
-    padding: 0;
-    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../images/electronics-small.jpg");
+    height: 400px;
+    @include atSmall {
+        height: 309px;
+        background-image: url("../images/electronics-middle.jpg");
+    }
+    @include atLarge {
+        background-image: url("../images/electronics.jpg");
+        height: 539px;
+    }
 
     &__logo {
         padding: 1rem;
@@ -10,29 +19,48 @@
         align-items: center;
         gap: 0.5em;
         height: 100%;
+        background: rgba($primary, 0.5);
+        /*         background: linear-gradient(
+            180deg,
+            rgba($primary, 0.7) 0%,
+            rgba($primary, 0.5) 60%,
+            rgba($primary, 0) 100%
+        ); */
         @include atSmall {
             flex-direction: row;
             justify-content: center;
         }
+        /* @media screen and (min-width: $small) and (max-width: $large) {
+                    background: linear-gradient(
+                        180deg,
+                        rgba($primary, 0.7) 0%,
+                        rgba($primary, 0.5) 85%,
+                        rgba($primary, 0) 100%
+                    );
+                } */
 
-        @include atLarge {
-            justify-content: flex-start;
-        }
         &__image {
             max-height: 7rem;
             display: block;
             @include atSmall {
+                max-height: 9rem;
                 display: inline;
+            }
+            @include atLarge {
+                max-height: 11rem;
             }
         }
         &__text {
             font-family: $logo-font-family;
             color: $primary-text;
-            font-size: 2rem;
+            font-size: 3rem;
             text-align: center;
             @include atSmall {
                 text-align: left;
-                font-size: 3rem;
+                font-size: 4rem;
+            }
+            @include atLarge {
+                font-size: 6rem;
             }
         }
     }

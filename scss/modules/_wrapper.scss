@@ -1,7 +1,28 @@
 .wrapper {
-    &--site {
-        max-width: 45em;
-        margin: 0 auto;
-        padding: 0 2em;
+    &--section-start {
+        background-color: $secondary-pale;
+    }
+    &--section-sponsors {
+        background-color: $secondary;
+    }
+    &--section-about {
+        background-color: rgba($secondary-pale, 0.7);
+    }
+    &--section-register {
+        background: $acc-pink;
+    }
+    &--board-member {
+        margin-top: 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        > div {
+            height: 250px;
+            width: 250px;
+            background-color: $secondary-pale;
+            border: 1px solid $secondary;
+            border-radius: 1rem;
+        }
     }
 }

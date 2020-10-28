@@ -1,0 +1,14 @@
+.section-title {
+    @include atLarge {
+        font-size: 2em;
+        margin-bottom: 1.1rem;
+    }
+    &--sub {
+        text-align: left;
+        font-family: $main-font-family;
+        @include atLarge {
+            font-size: 1.2em;
+            margin-top: 0.5rem;
+        }
+    }
+}

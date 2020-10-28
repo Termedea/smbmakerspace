@@ -12,13 +12,6 @@
 </head>
 
 <body>
-    <header class="site-header">
-
-        <h1 class="site-header__logo">
-            <img class="site-header__logo__image" src="./assets/images/logo/Glödlampa_ingen_text.png" alt="" />
-            <a class="site-header__logo__text" href="">Smedjebacken <br />Makerspace</a>
-        </h1>
-    </header>
     <nav class="primary-nav">
         <ul>
             <li><a href="#sponsors">Våra sponsorer</a></li>
@@ -26,18 +19,16 @@
             <li><a href="#register">Bli medlem</a></li>
         </ul>
     </nav>
+    <header class="site-header">
 
-    <div class="wrapper wrapper--site">
-
-        <div id="start" class="page-section">
-
-            <div class="slideshow">
-                <img id="image1" class="slideshow-image" src="./assets/images/electronics.jpg" alt="Elektronik">
-                <img id="image1" class="slideshow-image" src="./assets/images/scratch.jpg" alt="Elektronik">
-                <img id="image1" class="slideshow-image" src="./assets/images/pearl machine.jpg" alt="Elektronik">
-                <img id="image1" class="slideshow-image" src="./assets/images/draw bot.jpg" alt="Elektronik">
-            </div>
-            <h2 id="image1" class="section-title">Välkommen till Smedjebacken Makerspace!</h2>
+        <h1 class="site-header__logo">
+            <img class="site-header__logo__image" src="./assets/images/logo/Glödlampa_ingen_text.png" alt="" />
+            <a class="site-header__logo__text" href="">Smedjebacken <br />Makerspace</a>
+        </h1>
+    </header>
+    <div class="wrapper wrapper--section-start">
+        <div id="start" class="page-section page-section--start">
+            <h2 class="section-title">Välkommen till Smedjebacken Makerspace!</h2>
             <p>
                 Vi är en förening som vill främja teknikkunskap och kreativitet i Smedjebacken med omnejd.
                 Vår ambition är att skapa en plats där alla kan komma och experimentera och skapa.
@@ -55,37 +46,45 @@
                     <li>Instagram</li>
                 </ul>
         </div>
-        <div id="sponsors" class="page-section">
+    </div>
+    <div class="wrapper wrapper--section-sponsors">
+        <div id="sponsors" class="page-section page-section--sponsors">
             <h2 class="section-title">Våra fantastiska sponsorer</h2>
             <div class="wrapper wrapper--sponsors">
                 <div class="sponsor">
-                    <h2 class="sponsor__title"></h2>
-                    <img src="" alt="" class="sponsor__logo">
+                    <h3 class="sponsor__title">
+                        </h2>
+                        <img src="" alt="" class="sponsor__logo">
                 </div>
                 <div class="sponsor">
-                    <h2 class="sponsor__title"></h2>
-                    <img src="" alt="" class="sponsor__logo">
+                    <h3 class="sponsor__title">
+                        </h2>
+                        <img src="" alt="" class="sponsor__logo">
                 </div>
                 <div class="sponsor">
-                    <h2 class="sponsor__title"></h2>
-                    <img src="" alt="" class="sponsor__logo">
+                    <h3 class="sponsor__title">
+                        </h2>
+                        <img src="" alt="" class="sponsor__logo">
                 </div>
                 <div class="sponsor">
-                    <h2 class="sponsor__title"></h2>
-                    <img src="" alt="" class="sponsor__logo">
+                    <h3 class="sponsor__title">
+                        </h2>
+                        <img src="" alt="" class="sponsor__logo">
                 </div>
             </div>
             <div class="sponsors__details sponsors__details--hidden">
             </div>
         </div>
-        <div id="about" class="page-section">
+    </div>
+    <div class="wrapper wrapper--section-about">
+        <div id="about" class="page-section page-section--about">
             <h2 class="section-title">Om oss</h2>
             <h3 class="section-title section-title--sub">Föreningen</h3>
             <p>Smedjebacken Makerspace grundades i början av 2018 och har sedan dess haft ett antal aktiviteter för
-                skolungdomar i Västerbergslagen</p>
+                skolungdomar i Västerbergslagen.</p>
             <p>Sedan starten har vi jobbat med att etablera föreningen, fixa sponsorer och lokaler, samt att skaffa
                 rolig utrustning.</p>
-            <h3 class="section-title">Sittande styrelse</h3>
+            <h3 class="section-title section-title--sub">Sittande styrelse</h3>
             <p>Vi väljer vår styrelse årsvis. För närvarande består den av dessa glada Makerspacare:</p>
             <div class="wrapper wrapper--board-member">
                 <div class="board-member">
@@ -115,14 +114,33 @@
             </div>
 
         </div>
-        <div id="register" class="page-section">
+    </div>
+    <div class="wrapper wrapper--section-register">
+        <div id="register" class="page-section page-section--register">
             <h2 class="section-title">Bli medlem</h2>
-            Medlemsvillkor
-            <div class="page-section__form"></div>
+
+            <div class="page-section__form">
+                <div class="form-label-input"><label for="">Förnamn</label><input type="text"></div>
+                <div class="form-label-input"><label for="">Efternamn</label><input type="text"></div>
+                <div class="form-label-input"><label for="">Födelsedatum (6 siffror)</label><input type="text"></div>
+                <div class="form-label-input"><label for="">E-postadress</label><input type="email"></div>
+                <div class="form-label-input"><label for="">Adress</label><input type="text"></div>
+                <div class="form-label-input"><label for="">Postnummer</label><input type="text"></div>
+                <div class="form-label-input"><label for="">Postort</label><input type="text"></div>
+
+                <p>
+                    <a href="#">Medlemsvillkor</a><a href="#">Såhär hanterar vi personuppgifter</a>
+                </p>
+                <button id="register">Registrera dig</button>
+
+            </div>
 
         </div>
     </div>
-    <div class="site-footer"></div>
+
+    <div class="site-footer">
+        <p class="social">Insta, Twitter, Facebook, youtube</p>
+    </div>
 </body>
 
 </html>

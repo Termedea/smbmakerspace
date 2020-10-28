@@ -1,3 +1,22 @@
 .page-section {
-    position: relative;
+    /* font-size: $main-font-size; */
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 3em;
+    li {
+        list-style-type: none;
+    }
+
+    &--start {
+        color: mix($acc-green, black, 25%);
+    }
+    &--sponsors {
+        color: mix($secondary, white, 10%);
+    }
+    &--about {
+        color: mix($secondary, black, 40%);
+    }
+    &--register {
+        color: mix($acc-pink, black, 40%);
+    }
 }
