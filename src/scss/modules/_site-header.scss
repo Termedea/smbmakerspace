@@ -1,14 +1,14 @@
 .site-header {
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("../images/electronics-small.jpg");
+    background-image: url("./assets/images/electronics-small.jpg");
     height: 400px;
     @include atSmall {
         height: 309px;
-        background-image: url("../images/electronics-middle.jpg");
+        background-image: url("./assets/electronics-middle.jpg");
     }
     @include atLarge {
-        background-image: url("../images/electronics.jpg");
+        background-image: url("./assets/images/electronics.jpg");
         height: 539px;
     }
 
