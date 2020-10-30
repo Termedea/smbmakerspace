@@ -1,12 +1,27 @@
 .primary-nav {
     background: $primary;
     font-size: 1rem;
+    border-bottom: $secondary 6px solid;
+
+    img {
+        display: none;
+    }
+    &--sticky {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+        background: $secondary-pale;
+
+        img {
+            display: inline;
+        }
+    }
 
     ul {
         list-style: none;
         display: flex;
         justify-content: center;
-        border-bottom: $secondary 6px solid;
 
         @include atSmall {
             font-size: 1.2rem;
