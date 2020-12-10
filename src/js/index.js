@@ -1,7 +1,3 @@
-import _ from "lodash";
+//Sticky menu with animation
 
-function component() {
-    const element = document.createElement("div");
-
-    return element;
-}
+//ajax to backend for form.
