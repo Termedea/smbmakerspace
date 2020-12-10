@@ -1,0 +1,26 @@
+.site-form {
+    &__input-pair {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+        font-size: 1.1rem;
+        align-items: center;
+        color: white;
+        label {
+            width: 20rem;
+        }
+        input {
+            border-radius: $def-round;
+            padding: 0.5rem;
+            width: 20rem;
+            font-family: $main-font-family;
+        }
+        &__checkbox-pair {
+            color: white;
+        }
+    }
+    button {
+        border-radius: $def-round;
+        padding: 1rem;
+    }
+}

@@ -2,6 +2,7 @@
 @import 'base/_fonts';
 @import 'base/_general';
 @import 'base/_media';
+@import 'base/_vars';
 
 @import 'modules/site-header';
 @import 'modules/wrapper';
@@ -11,3 +12,4 @@
 @import 'modules/board-member';
 @import 'modules/sponsor';
 @import 'modules/site-footer';
+@import 'modules/site-form';
